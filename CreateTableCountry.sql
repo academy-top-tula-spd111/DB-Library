@@ -1,0 +1,22 @@
+USE [Library]
+GO
+
+/****** Object:  Table [dbo].[Country]    Script Date: 14.03.2023 17:42:22 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Country](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [varchar](50) NOT NULL,
+	[capital] [varchar](50) NULL,
+ CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
